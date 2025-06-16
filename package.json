@@ -1,0 +1,39 @@
+{
+  "name": "scout-analytics-v3",
+  "version": "3.1.0",
+  "description": "Philippine FMCG retail intelligence platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/dashboard",
+    "build": "npm run build --workspace=apps/dashboard",
+    "preview": "npm run preview --workspace=apps/dashboard",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules apps/*/dist packages/*/dist",
+    "deploy": "vercel --prod",
+    "setup": "npm install && npm run build"
+  },
+  "keywords": [
+    "retail",
+    "analytics", 
+    "fmcg",
+    "philippines",
+    "dashboard",
+    "ai",
+    "intelligence"
+  ],
+  "author": "TBWA Philippines",
+  "license": "PRIVATE",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

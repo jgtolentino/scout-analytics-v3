@@ -1,0 +1,18 @@
+{
+  "name": "@scout/shared",
+  "version": "3.1.0",
+  "description": "Shared utilities and types for Scout Analytics",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
