@@ -13,10 +13,14 @@
     font-variation-settings: 'opsz' 32;
   }
   body {
-    @apply bg-neutral text-brandText font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #F9FAFB;
+    color: #1A1A1A;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold;
+    font-weight: 600;
   }
 }
 
