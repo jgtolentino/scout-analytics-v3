@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "scout-v3",
   "builds": [
     {
       "src": "apps/dashboard/package.json",
@@ -10,22 +9,15 @@
       }
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/apps/dashboard/dist/$1"
-    }
-  ],
   "buildCommand": "cd apps/dashboard && npm run build",
   "devCommand": "cd apps/dashboard && npm run dev",
   "installCommand": "npm install",
   "outputDirectory": "apps/dashboard/dist",
   "framework": "vite",
-  "redirects": [
+  "rewrites": [
     {
-      "source": "/dashboard/(.*)",
-      "destination": "/$1",
-      "permanent": false
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
